@@ -26,5 +26,22 @@ amat(2,3) % 2nd row 3rd column
 amat(2,:) % 2nd row all the columns
 
 tes = rand(10)
-% return 2 5th and 6th row and return columns 4 to 7 
+% return 2nd 5th and 6th row and return columns 4 to 7 
 
+%  this can also be used for assigning value to existin matrix
+
+% Another method to extend a matrix is to include another column
+
+amat = [amat, [100;101;102]]
+
+% To see all the elements of a matrix as a single column
+
+amat(:)
+
+newmat = [amat amat]
+% we just created a new matrix concatenated two matrix
+% another thing to practice is 
+% newmatrix = [amat;amat]
+% [Matrix Matrix] is same as [Matrix, Matrix]
+
+[amat,amat]

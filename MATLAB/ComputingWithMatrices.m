@@ -26,3 +26,4 @@ max(max(mat1)) % returns the exact value that ie maximum or max(A(:))
 % WE can flip the matrix by flipup method
 
 flipud(eye(9))
+new = [ones(9,1),a]

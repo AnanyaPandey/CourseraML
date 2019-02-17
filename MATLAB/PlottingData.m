@@ -12,4 +12,13 @@ title('my plot')
 print -dpng 'sincosplot.png'
 close % to close the plot 
 
-figure(1); plot(t,y1);
+% to see both plots in saperate figures windows
+% figure(1); plot(t,y1);
+% figure(2); plot(t,y2);
+
+% to see both in same window 
+# subplot(1,2,1); plot(t,y1);
+# subplot(1,2,2); plot(t,y2);
+
+% help axis 
+

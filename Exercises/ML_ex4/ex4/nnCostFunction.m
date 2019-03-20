@@ -75,6 +75,8 @@ y=y_mt(y,:);
 
 J = (-1/m) .* sum(sum( y.*log(a3) + (1-y).*log(1-a3) ));
 reg_term = (lambda/(2*m)) .* (sum(sum(Theta1(:,2:end).^2)) + sum(sum(Theta2(:,2:end).^2)));
+% in regularization term there are 3 Sums whereas here are only 2 how is that ???
+% See the + sign between Theta 1 and Theta 2 reg term, thats the third sum :) 
 J = J + reg_term;
 
 
